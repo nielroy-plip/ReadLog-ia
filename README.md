@@ -24,7 +24,7 @@ O projeto analisa automaticamente logs de banco de dados e fornece insights inte
 - **Resumo de Sessões**: Agrupa análises por processo/sessão para identificar problemas isolados
 - **Sugestões Automáticas**: Fornece recomendações para otimização baseadas nos padrões detectados
 
-## �� Como Funciona
+## 🔍 Como Funciona
 
 1. **Parser Inteligente**: Lê e interpreta arquivos de log (.zlg e outros formatos)
 2. **Classificação Automática**: Categoriza cada entrada de log (SQL, erro, performance, etc.)
@@ -44,9 +44,9 @@ O projeto analisa automaticamente logs de banco de dados e fornece insights inte
 ## 🏗️ Arquitetura
 
 O projeto está estruturado em:
-- **Parsers**: Interpretam diferentes formatos de log
-- **Analyzers**: Processam os dados e geram insights
-- **Types**: Definições de tipos TypeScript para garantir consistência
+- **Parsers**: Interpretam diferentes formatos de log (atualmente suporta formato .zlg)
+- **Types**: Definições de tipos TypeScript para análise de logs e resultados
+- **Analysis Types**: Estruturas para diferentes tipos de análise (performance, erros, memória, etc.)
 
 ## 🎯 Objetivo
 
