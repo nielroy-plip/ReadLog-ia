@@ -19,12 +19,11 @@ import * as readline from 'readline';
  */
 export abstract class BaseLogParser implements ILogParser {
   canParser(filename: string, sampleContent: string): FormatDetectionResult {
-      throw new Error('Method not implemented.');
+    throw new Error('Method not implemented.');
   }
   parseStram(filePath: string, options?: ParserOptions): AsyncIterableIterator<LogEntry> {
-      throw new Error('Method not implemented.');
+    throw new Error('Method not implemented.');
   }
-  
   // Métodos abstratos que cada parser específico deve implementar
   abstract getName(): string;
   abstract getSupportedFormats(): string[];

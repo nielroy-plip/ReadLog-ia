@@ -1,5 +1,42 @@
 {
+  "name": "log-analyzer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Ferramenta desktop para análise de logs",
+  "author": "Seu Nome",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@tauri-apps/api": "^1.5.3",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.5.0"
+  },
   "devDependencies": {
-    "@types/node": "^25.0.6"
+    "@tauri-apps/cli": "^1.5.9",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "vite": "^7.3.1"
   }
 }
